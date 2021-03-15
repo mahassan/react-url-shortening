@@ -3,7 +3,6 @@ const Footer = () => {
 
     const Footer = styled.footer`
      width: 100%;
-     height: 130px;
      background: #2c2a35;
      color: #fff;
      display: flex;

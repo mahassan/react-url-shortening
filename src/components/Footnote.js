@@ -19,7 +19,7 @@ const Banner = styled.div`
 const Footnote = () => {
     return (  
         <Banner>
-            <h1>Boots your links today</h1>
+            <h1>Boost your links today</h1>
             <br />
             <button>Get Started</button>
         </Banner>
