@@ -2,23 +2,29 @@ import styled from 'styled-components'
 const Footer = () => {
 
     const Footer = styled.footer`
-     width: 100%;
-     background: #2c2a35;
-     color: #fff;
-     display: flex;
-     align-items: center;
-     padding:0 16px;
-     box-sizing: border-box;
-     li a{
-         color:#7f7c83;
-         line-height: 24px;
+    @media (min-width:  376px){
+        display: flex;
+    }
+    text-align: center;
+    width: 100%;
+    background: #2c2a35;
+    color: #fff;
+    align-items: center;
+    // padding:0 16px;
+    padding:52px 0;
+    box-sizing: border-box;
+     li{
+        line-height: 2;
+        a{
+            color:#7f7c83;
+        }
      }
      div{
-        width:20%;
+        width:100%;
         &:nth-child(5){
-            margin-left: 10px;
             justify-content: space-around;
             display: flex;
+            margin-top:54px;
         }
      }
     `
@@ -51,7 +57,7 @@ const Footer = () => {
                    <li><a href='/'>Link Shortning</a></li>
                </ul>
            </div>
-           <div>
+           <div className="social-icons">
                <img src='./images/icon-facebook.svg' alt='facebook'/>
                <img src='./images/icon-twitter.svg' alt='twitter'/>
                <img src='./images/icon-pinterest.svg' alt='pinterest'/>

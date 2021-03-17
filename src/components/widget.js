@@ -2,27 +2,43 @@ import styled from 'styled-components';
 import {useState} from 'react'
 
 const Widget = styled.div`
-        width: 100%;
-        background: purple;
-        padding: 52px 0;
+        padding: 24px;
         display: flex;
         justify-content: center;
+        background: url('./images/bg-shorten-mobile.svg') no-repeat top right #3a3053;
+        border-radius: 15px;
         button{
-            width:188px;
-            height: 64px;
+            width 100%;
+            height: 55px;
             border-radius:10px;
-            margin-left:24px;
+            margin-top:15px;
+
         }
-        background: url('./images/bg-shorten-desktop.svg') no-repeat #3a3053;
-        margin: 0 auto;
+        margin-top: 88px;
+        margin-bottom: 95px;
+        @media (min-width:  376px){
+            //padding: 0 24px;
+            //background: url('./images/bg-shorten-desktop.svg') no-repeat #3a3053;
+        }
 `
 const TextInput = styled.input`
-        width:770px;
+        color: hsl(0, 0%, 75%);
+        font-size: 18px;
+        width: 100%;
         height: 64px;
         border:none;
         border-radius:10px;
-        font-size: 2rem;
         padding: 1rem;
+        box-sizing: border-box;
+            @media (min-width:  376px){
+            width:770px;
+            height: 64px;
+            border:none;
+            border-radius:10px;
+            padding: 1rem;
+            box-sizing: border-box;
+            }
+
 `
 const WidgetForm = () => {
 
@@ -40,6 +56,7 @@ const WidgetForm = () => {
             <form onSubmit={handleCall}>
             <TextInput 
                 type="text" 
+                placeholder="shorten a link here..."
                 value={url}
                 onChange={(e)=> setUrl(e.target.value)}></TextInput>
             <button>Shorten</button>

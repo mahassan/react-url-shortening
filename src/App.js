@@ -7,11 +7,13 @@ import Footer from "./components/Footer"
 import styled from "styled-components"
 
 const AppContainer = styled.div`
+    padding: 24px;
     @import url('https://fonts.googleapis.com/css2?family=Roboto:wght@300;500;700;900&display=swap');
     font-family: 'Roboto', sans-serif;
     margin:auto 0;
-    h1{
+    h1,ul{
       margin:0;
+      padding: 0;
     }
     li{
       list-style:none;
@@ -26,7 +28,12 @@ const AppContainer = styled.div`
         padding: 10px;
         color: #fff;
         border:none;
+        font-weight:700;
+        font-size:18px;
     }
+    @media(min-width: 376px){ //desktop
+      padding: 0;
+  }
     
 `
 function App() {

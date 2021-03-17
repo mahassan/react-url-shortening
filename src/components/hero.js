@@ -1,23 +1,35 @@
 import styled from 'styled-components';
 
 const HeroSection = styled.div`
-    display: flex;
-    width: 100%;
-    .hero{
-        &__text{
-        width: 60%;
-        h1{     
-            font-size: 3.5rem;
-            margin-top: 4rem;
-        }
-        }
-        &__img{
-            width: 40%;
-            img{
-                width:100%;
+        width: 100%;
+        text-align: center;
+        display: flex;
+        flex-direction: column;
+        .hero{
+            &__text{
+            width: 100%;
+            line-height: 1.2;
+            p{
+                color:hsl(257, 7%, 63%);
+                }
+            }
+            &__img{
+                order: -1;
+                img{
+                    width:100%;
+                    margin-bottom: 42px;
+                }
+            }
+            &__btn{
+                width:196px;
+                height:55px;
+                border-radius:34px;
             }
         }
-    }
+        h1{     
+            font-size: 1.13rem; //16 is html * 1.13 = 18.08
+            font-weight:700;
+            }
 
 `
 
@@ -32,7 +44,7 @@ const Hero = () => {
                 Build your brand's recognition and get detailed <br />
                 insight on how your links are performing
             </p>
-            <button>Get Started</button>
+            <button className="hero__btn">Get Started</button>
         </section>
         <section className="hero__img">
             <img src="../images/illustration-working.svg" alt="person working" />

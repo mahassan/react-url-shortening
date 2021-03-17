@@ -2,6 +2,8 @@ import styled from 'styled-components';
 
 const AccordionStyle = styled.div`
    background: #f0f1f6;
+   margin-top: -179px;
+   padding-top: 179px;
    padding-bottom:118px;
    h1,p.hero{
        display: flex;
