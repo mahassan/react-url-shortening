@@ -13,11 +13,9 @@ const AppHeader = styled.div`
             display: inherit;
             align-items: center;
             li{
-                list-style:none;
                 padding: 0 36px 0 0;
                 a{
                     color: #9b9aa0;
-                    text-decoration: none;
                 }
             }
         }

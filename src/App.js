@@ -8,18 +8,10 @@ import styled from "styled-components"
 
 const AppContainer = styled.div`
     padding: 24px;
-    @import url('https://fonts.googleapis.com/css2?family=Roboto:wght@300;500;700;900&display=swap');
-    font-family: 'Roboto', sans-serif;
     margin:auto 0;
     h1,ul{
       margin:0;
       padding: 0;
-    }
-    li{
-      list-style:none;
-    }
-    a{
-      text-decoration:none
     }
     a.active,
     button{

@@ -2,9 +2,12 @@ import styled from 'styled-components';
 
 const AccordionStyle = styled.div`
    background: #f0f1f6;
-   margin-top: -179px;
+   margin-top: -203px;
    padding-top: 179px;
    padding-bottom:118px;
+   position: relative;
+    z-index: -1;
+    width: 100%;
    h1,p.hero{
        display: flex;
        justify-content: center;
@@ -25,6 +28,7 @@ const AccordionStyle = styled.div`
 
 `
 const Box = styled.div`
+@media(min-width: 376px){ //desktop
     display: flex;
     position: relative;
     .line{
@@ -34,6 +38,7 @@ const Box = styled.div`
         position: absolute;
         margin-top:150px;
     }
+}
 `
 const Card = styled.div`
     width: 350px;
