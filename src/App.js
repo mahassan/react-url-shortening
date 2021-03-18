@@ -38,14 +38,16 @@ const AppContainer = styled.div`
 `
 function App() {
   return (
-    <AppContainer>
-          <Header />
-          <Hero />
-          <WidgetForm />
-          <Accordion />
-          <Footnote />
-          <Footer />
-    </AppContainer>
+    <div>
+      <AppContainer>
+            <Header />
+            <Hero />
+            <WidgetForm />
+      </AppContainer>
+            <Accordion />
+            <Footnote />
+            <Footer />
+    </div>
   );
 }
 
